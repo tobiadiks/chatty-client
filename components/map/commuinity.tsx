@@ -6,15 +6,15 @@ const CommuinityMap = (props: {
     longitude?: number,
     latitude?: number
 }) => {
-    
+
 
 
     return (
         <Map
             mapboxAccessToken="pk.eyJ1IjoiY29kcmVjdCIsImEiOiJjbDF4cnByb3gwNHY0M2NtdHdpMnBvdjJrIn0.hCjjxe_0OXzAWGDIfupAfA"
             initialViewState={{
-                longitude: props.longitude ,
-                latitude: props.latitude ,
+                longitude: props.longitude,
+                latitude: props.latitude,
                 zoom: 18,
                 bearing: 90,
                 pitch: 90,
