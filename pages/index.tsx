@@ -17,6 +17,7 @@ const HomePage = () => {
         if (navigator.geolocation) {
             const geo = navigator.geolocation
             geo.watchPosition((position) =>{setCordinates(position)},(err)=>console.log(err),{timeout:60*60*3000,enableHighAccuracy:true})
+            
         }
         else {
             alert('No Location Driver')
@@ -45,7 +46,7 @@ const HomePage = () => {
                 }
             </AnimatePresence>
             <DesktopMenu />
-            <CommuinityMap latitude={cordinates?.coords.latitude} longitude={cordinates?.coords.longitude} />
+            {!isLoading && <CommuinityMap onload={()=>setLoading(false)} latitude={cordinates?.coords.latitude} longitude={cordinates?.coords.longitude} />}
             <MobileMenu />
         </MainLayout>
     )
