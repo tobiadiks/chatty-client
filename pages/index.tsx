@@ -24,7 +24,7 @@ const HomePage = () => {
             {isLoading &&
                 (<motion.div key={'modal'} onClick={() => setLoading(!isLoading)} className="bg-yellow-400 flex flex-col h-screen z-50 w-0 absolute" initial={{ width: '100%', scale: 0 }} exit={variants.loaded} animate={{ width: "100%", scale: 1 }} >
                     <motion.div className=" mx-auto my-auto" exit={{ opacity: 0 }} ><div className="text-center font-bold text-2xl">CoDrect</div><div className="text-xs text-center">The collaborative live location  <p />social network for GenZ</div>
-                        <div className="text-center mt-2 text-lg animate-bounce"><FontAwesomeIcon icon={faStreetView} /></div></motion.div>
+                        <div className="text-center mt-2 text-md animate-bounce"><FontAwesomeIcon icon={faStreetView} /></div></motion.div>
                 </motion.div>)
 
             }

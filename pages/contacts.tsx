@@ -8,8 +8,8 @@ const ContactPage=()=>{
         <MainLayout>
             <DesktopMenu/>
             <div className="flex w-full">
-            <div className="h-full w-full lg:w-1/3">
-                <div className="py-6 px-4 text-lg text-center bg-white font-bold fixed shadow   top-0 w-full lg:w-1/3">Your Contacts</div>
+            <div className="h-full w-full md:w-1/3">
+                <div className="py-6 px-4 text-md text-center bg-white font-bold fixed shadow   top-0 w-full md:w-1/3">Your Contacts</div>
             <div>
             <div className=" divide-y h-screen py-20 divide-gray-200  overflow-y-auto">
                 <div className="px-2 py-2 grid grid-cols-4 w-full"><div className="w-16 h-16 rounded-full bg-yellow-100"></div><div className="my-auto col-span-2">
@@ -41,7 +41,7 @@ const ContactPage=()=>{
             </div>
             </div>
             </div>
-            <div className="hidden lg:block w-0 lg:w-2/3">
+            <div className="hidden md:block w-0 md:w-2/3">
                 <CommuinityMap/>
             </div>
          <MobileMenu/> 
